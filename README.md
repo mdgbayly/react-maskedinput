@@ -4,6 +4,12 @@ A [React](http://facebook.github.io/react/) component for `<input>` masking, bui
 
 ![This project has never been used by its author, other than while making it.](https://img.shields.io/badge/author--usage-never-red.png "This project has never been used by its author, other than while making it")
 
+## Bug fixes
+
+This scoped fork of react-masked input includes bug fixes for the following PRs:
+
+https://github.com/insin/react-maskedinput/pull/38
+
 ## [Live Demo](http://insin.github.io/react-maskedinput/)
 
 ## Install

@@ -1,0 +1,7 @@
+/coverage
+/demo
+/node_modules
+npm-debug.log
+/src
+.eslintrc
+nwb.config.js
