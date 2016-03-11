@@ -4,11 +4,15 @@ A [React](http://facebook.github.io/react/) component for `<input>` masking, bui
 
 ![This project has never been used by its author, other than while making it.](https://img.shields.io/badge/author--usage-never-red.png "This project has never been used by its author, other than while making it")
 
-## Bug fixes
+## Bug fixes / Changes
 
 This scoped fork of react-masked input includes bug fixes for the following PRs:
 
 https://github.com/insin/react-maskedinput/pull/38
+
+It also depends on a forked version of inputmask-core.
+The fork allows for a blankPlaceholderChar in the mask.  This is required by our usage of this library and works with our mask
+which has the form '111%' for entering percentages. However, I do not know if this will break other masks/scenarios.
 
 ## [Live Demo](http://insin.github.io/react-maskedinput/)
 
