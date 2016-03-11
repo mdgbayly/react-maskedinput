@@ -32,11 +32,14 @@ var MaskedInput = React.createClass({
     var options = {
       pattern: this.props.mask,
       value: this.props.value,
-      formatCharacters: this.props.formatCharacters
+      formatCharacters: this.props.formatCharacters,
+      placeholderChar: this.props.placeholderChar
     }
+    /*
     if (this.props.placeholderChar) {
       options.placeholderChar = this.props.placeholderChar
     }
+    */
     this.mask = new InputMask(options)
   },
 

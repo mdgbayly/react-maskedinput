@@ -13,6 +13,8 @@ https://github.com/insin/react-maskedinput/pull/38
 It also depends on a forked version of inputmask-core.
 The fork allows for a blankPlaceholderChar in the mask.  This is required by our usage of this library and works with our mask
 which has the form '111%' for entering percentages. However, I do not know if this will break other masks/scenarios.
+This version of react-maskedinput also contains a fix to allow a blank placeholderChar to be passed to to InputMask. The master version
+ignores blank placeholders.
 
 ## [Live Demo](http://insin.github.io/react-maskedinput/)
 
