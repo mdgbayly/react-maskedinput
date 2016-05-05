@@ -15,6 +15,8 @@ function isRedo(e) {
 }
 
 var MaskedInput = React.createClass({
+  displayName: 'MaskedInput',
+
   propTypes: {
     mask: React.PropTypes.string.isRequired,
 
