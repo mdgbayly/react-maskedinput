@@ -155,7 +155,7 @@ var MaskedInput = React.createClass({
 
     e.preventDefault()
     this._updateMaskSelection()
-    if (this.mask.input(e.key)) {
+    if (this.mask.input(e.key || e.data)) {
       e.target.value = this.mask.getValue()
       this._updateInputSelection()
       if (this.props.onChange) {
@@ -184,11 +184,11 @@ var MaskedInput = React.createClass({
     var value = this.mask.getValue()
     return value === this.mask.emptyValue ? '' : value
   },
-  
+
   focus() {
     this.input.focus();
   },
-  
+
   blur() {
     this.input.blur();
   },
@@ -201,7 +201,7 @@ var MaskedInput = React.createClass({
       maxLength={patternLength}
       onChange={this._onChange}
       onKeyDown={this._onKeyDown}
-      onKeyPress={this._onKeyPress}
+      onBeforeInput={this._onKeyPress}
       onPaste={this._onPaste}
       placeholder={placeholder || this.mask.emptyValue}
       size={size || patternLength}
